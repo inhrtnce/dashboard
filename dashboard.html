@@ -13643,10 +13643,8 @@
             var responseP2 = document.createElement("p");
             responseP2.className = "customersupporttextresponsebox-p2";
             responsediv2.className = "customersupporttextresponsebox-div2"
-            responseP2.innerHTML = `<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <input type="hidden" name="action" value="clear_chats">
-            <button type="submit" class="clear-chat-link" style="font-weight: bold; color:white; background:none; border:none;">Connect Live support</button>
-            </form>`;
+            responseP2.innerHTML = `<button type="submit" class="clear-chat-link" style="font-weight: bold; color:white; background:none; border:none;" onclick="location.href='https://myinhfnds.infy.uk/contactsupport.php'">Connect Live support</button>
+            `;
         
             // Append the responseDiv2 to the responseDiv1
             responsediv2.appendChild(responseP2);
