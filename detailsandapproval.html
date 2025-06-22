@@ -8,42 +8,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.js"></script>
 <title>verifying</title>
 <style>
-.application-note-p-head{
-  margin-bottom: 40px;
-}
-.randommemberspicked{
+.application-note-p{
   display: flex;
   justify-content: center;
-}
-.space{
-  padding: 0px 2px;
-}
-#verificationicon{
-  font-size: 0px;
-}
-#veryfingmember, #verificationicon, #randomMemberElement{
-  transition: all 0.8s ease-in-out;
-}
-.gobackhome-p{
-  margin-top: -20px;
-}
-.gobackhome-p button{
-  background: none;
-  border: none;
-  text-decoration: underline;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   color: blue;
 }
 </style>
 </head>
 <body>
-<div class="application-note-p"><p id="homebuttoninqualificationcheck" class="gobackhome-p"><button onclick="goBackHome()">GobackHome</button></p></div>
-
-<script>
-const url = 'https://myinhfnds.infy.uk';
-function goBackHome(){
-  location.href = url;
-  localStorage.removeItem('login')
-}  
-</script>
+<a class="application-note-p" href="https://myinhfnds.infy.uk">GobackHome</a>
 </body>
 </html>
