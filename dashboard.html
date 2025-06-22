@@ -578,7 +578,7 @@
       <div id="navigationbuttonsdiv">
       <div class="navigationbuttonsdivflex">
       <p class="navigationpbutton-p"><button class="navigationbuttonformenu"><i class="fa-solid navigationicons fa-house-user"  onclick="dashboardHomePage()"></i></button></p>
-      <p class="navigationpbuttonforstats"><button class="navigationbuttonformenu" onclick="location.href='withdraw.html'"><i class="fa-solid fa-arrows-up-to-line"></i></button></p>
+      <p class="navigationpbuttonforstats"><button class="navigationbuttonformenu" onclick="navigateWithdraw()"><i class="fa-solid fa-arrows-up-to-line"></i></button></p>
       <p class="navigationpbuttonformenu navigationpbutton-p"><button  class="navigationbuttonformenu" onclick="portraitMenu()"><i class="fa-solid navigationicons fa-compass"></i></button></p>
       </div>
       </div>
@@ -17356,7 +17356,7 @@
         window.dashboardHomePage();
       }
       function transferpage(){
-        location.href = 'transfer.php'
+        location.href = 'https://myinhfnds.infy.uk/transfer.php'
       }
 
 
@@ -17411,7 +17411,7 @@
       document.body.style.overflow = '';
       }
       function sendFromGrantBalanceToSavingsandOthersnew(){
-        location.href = 'transfer.php';
+        location.href = 'https://myinhfnds.infy.uk/transfer.php';
       } 
       function sendFromGrantBalanceToSavings(){
       const grantBalanceInputId = document.getElementById('savingsinputid');
@@ -18365,7 +18365,7 @@
       localStorage.removeItem("withdrawtobank")
       }
       function navigateWithdraw(){
-        location.href = 'withdraw.html'
+        location.href = 'https://myinhfnds.infy.uk/withdraw.html'
       }
       function confirmWithdrawDetails() {
         var bankName = document.getElementById("recipientbanknameinput").value;
@@ -18671,7 +18671,7 @@
         localStorage.removeItem('WNdisplay');
       }
       function HistoryPage(){
-        location.href = 'recenttransactions.php';
+        location.href = 'https://myinhfnds.infy.uk/recenttransactions.php';
       }
       const banktransactionhistorystore = localStorage.getItem("banktransactionshistory")
       if (banktransactionhistorystore){
@@ -18692,7 +18692,7 @@
         document.getElementById('transactionsuccess').style.display = 'none';
       }
       function navigatebacktohistory(){
-        location.href = 'recenttransactions.php'
+        location.href = 'https://myinhfnds.infy.uk/recenttransactions.php'
       }
       function navWithdrawalsHistory(){
         document.getElementById('navigationbuttonsdivdisplay').style.display = 'none';
